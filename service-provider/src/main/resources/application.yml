@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@192.168.80.130:1521:orcl
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: kpwang
+    password: ww920321
+  application:
+    name: service-provider
+mybatis:
+  type-aliases-package: com.kpwang.pojo
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
